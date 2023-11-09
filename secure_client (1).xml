@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.xmlsoap.org/encoding/ AnyConnectProfile.xsd">
+	<ClientInitialization>
+		<CertificatePinning>false</CertificatePinning>
+		<UseStartBeforeLogon UserControllable="true">true</UseStartBeforeLogon>
+		<WindowsLogonEnforcement>SingleLocalLogon</WindowsLogonEnforcement>
+		<WindowsVPNEstablishment>LocalUsersOnly</WindowsVPNEstablishment>
+		<LinuxLogonEnforcement>SingleLocalLogon</LinuxLogonEnforcement>
+		<LinuxVPNEstablishment>LocalUsersOnly</LinuxVPNEstablishment>
+		<CertificateStore>All</CertificateStore>
+		<CertificateStoreMac>All</CertificateStoreMac>
+		<CertificateStoreLinux>All</CertificateStoreLinux>
+		<CertificateStoreOverride>false</CertificateStoreOverride>
+		<LocalLanAccess UserControllable="false">false</LocalLanAccess>
+		<AutoReconnect UserControllable="true">true
+			<AutoReconnectBehavior UserControllable="false">ReconnectAfterResume</AutoReconnectBehavior>
+		</AutoReconnect>
+		<MinimizeOnConnect UserControllable="true">true</MinimizeOnConnect>
+		<SuspendOnConnectedStandby>false</SuspendOnConnectedStandby>
+		<RSASecurIDIntegration UserControllable="true">Automatic</RSASecurIDIntegration>
+		<ClearSmartcardPin UserControllable="false">true</ClearSmartcardPin>
+		<IPProtocolSupport>IPv4</IPProtocolSupport>
+		<AutomaticCertSelection UserControllable="false">true</AutomaticCertSelection>
+		<AllowLocalProxyConnections>true</AllowLocalProxyConnections>
+		<EnableAutomaticServerSelection UserControllable="false">false</EnableAutomaticServerSelection>
+		<ProxySettings>Native</ProxySettings>
+		<AutomaticVPNPolicy>false
+			<TrustedNetworkPolicy>Connect</TrustedNetworkPolicy>
+			<UntrustedNetworkPolicy>Connect</UntrustedNetworkPolicy>
+			<AlwaysOn>true
+				<AllowVPNDisconnect>true</AllowVPNDisconnect>
+				<ConnectFailurePolicy>Open
+					<AllowCaptivePortalRemediation>false
+						<CaptivePortalRemediationTimeout>0</CaptivePortalRemediationTimeout>
+					</AllowCaptivePortalRemediation>
+					<ApplyLastVPNLocalResourceRules>false</ApplyLastVPNLocalResourceRules>
+				</ConnectFailurePolicy>
+			</AlwaysOn>
+		</AutomaticVPNPolicy>
+		<CaptivePortalRemediationBrowserFailover>false</CaptivePortalRemediationBrowserFailover>
+		<AuthenticationTimeout>30</AuthenticationTimeout>
+	</ClientInitialization>
+	<ServerList>
+		<HostEntry>
+			<HostName>saselab - TLS - Auto Select Nearest Location</HostName>
+			<HostAddress>6a26.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>saselab</UserGroup>
+		</HostEntry>
+	</ServerList>
+</AnyConnectProfile>
